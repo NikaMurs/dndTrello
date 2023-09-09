@@ -36,7 +36,7 @@ jobs:
         run: npm run lint
 
       - name: Run test
-        run: npm run coverage --passWithNoTests
+        run: npm run coverage
 
       - name: Build
         run: npm run build
