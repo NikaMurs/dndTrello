@@ -83,7 +83,9 @@ let actualElementX;
 let actualElementY;
 
 function listenerCards() {
-  const columnContentCards = document.querySelectorAll(".columnContentCardText");
+  const columnContentCards = document.querySelectorAll(
+    ".columnContentCardText"
+  );
   for (let i = 0; i < columnContentCards.length; i++) {
     columnContentCards[i].removeEventListener("mousedown", onMouseDown);
   }
