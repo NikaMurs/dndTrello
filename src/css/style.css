@@ -1,0 +1,153 @@
+body{
+    background-color: #107abb;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+.container{
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
+.columns{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.column{
+    background-color: #dee2e5;
+    width: calc((100% / 3) - 10px);
+    border-radius: 5px;
+}
+
+.columnContent{
+    padding: 10px;
+}
+
+.columnTitle{
+    color: #2b4757;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.columnContentCard{
+    position: relative;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: grabbing;
+}
+
+.columnContentCardText{
+    margin: 0;
+}
+
+.columnContentCard:nth-child(n+3){
+    margin-top: 5px;
+}
+
+.columnContentCard:hover .columnContentCardDelete{
+    display: block;
+}
+
+.columnContentCardDelete{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    color: #9e9e9e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.columnContentCardDelete:hover{
+    color: red
+}
+
+.columnFooterButton{
+    width: 100%;
+    background-color: #dee2e5;
+    color: #5e6061;
+    border: none;
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.columnFooterButton:hover{
+    background-color: #c3cbcf;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.columnFooterNewCard{
+    padding: 5px 10px;
+}
+
+.columnFooterNewCardText{
+    width: calc(100% - 10px);
+    height: 40px;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.columnFooterNewCardText:focus{
+    outline: none;
+}
+
+.columnFooterNewCardButtons{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.columnFooterNewCardAdd{
+    color: #ffffff;
+    background-color: #5ca84d;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.columnFooterNewCardAdd:hover{
+    background-color: #3c6e32;
+    cursor: pointer;
+}
+
+.columnFooterNewCardClose{
+    background-color: #dee2e5;
+    font-size: 16px;
+    color: #5e6061;
+    margin-left: 5px;
+    border: none;
+}
+
+.columnFooterNewCardClose:hover{
+    color: #383a3b;
+    cursor: pointer;
+}
+
+
+
+
+
+.dragged{
+    position: absolute;
+    width: calc(((100% / 3) - 10px) - 43.5px);
+    z-index: 999;
+}
+
+.hide{
+    display: none;
+}
