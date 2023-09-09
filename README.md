@@ -1,4 +1,4 @@
-# cardValidation
+# dndTrello
 
 https://nikamurs.github.io/dndTrello/
 
