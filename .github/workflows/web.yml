@@ -1,4 +1,4 @@
-name: Netology AHJ
+name: dndTrello
 
 on: [push, pull_request]
 
